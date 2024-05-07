@@ -58,10 +58,10 @@ namespace Directory.Controllers
             {
                 return NotFound();
             }
-            updateContact.Name = contact.Name;
-            updateContact.Email = contact.Email;
-            updateContact.Phone = contact.Phone;
-            updateContact.Favorite = contact.Favorite;
+            contact.Name = updateContact.Name;
+            contact.Email = updateContact.Email;
+            contact.Phone = updateContact.Phone;
+            contact.Favorite = updateContact.Favorite;
 
             contactDbContext.Contacts.Update(contact);
             contactDbContext.SaveChanges();
