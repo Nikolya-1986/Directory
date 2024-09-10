@@ -65,7 +65,7 @@ namespace Directory.Controllers
 
             contactDbContext.Contacts.Update(contact);
             contactDbContext.SaveChanges();
-            return Ok();
+            return Ok(contact);
 ;        }
 
         [HttpDelete]
@@ -78,7 +78,7 @@ namespace Directory.Controllers
                 contactDbContext.Contacts.Remove(contact);
                 contactDbContext.SaveChanges();
             }
-            return Ok();
+            return Ok(contact);
         }
     }
 }
