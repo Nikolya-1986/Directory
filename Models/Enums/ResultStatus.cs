@@ -1,0 +1,20 @@
+namespace Directory.Models.Enums
+{
+    public enum ResultStatus
+    {
+        OK = 200,
+        Created = 201,
+        NoContent = 204,
+        BadRequest = 400,
+        Unauthorized = 401,
+        Forbidden = 403,
+        NotFound = 404,
+        MethodNotAllowed = 405,
+        RequestTimeout = 409,
+        InternalServerError = 500,
+        BadGateway = 502,
+        ServiceUnavailable = 503,
+        GatewayTimeout = 504,
+        HTTPVersionNotSupported = 505,
+    }
+}
